@@ -76,10 +76,10 @@
   #if Z_HOME_DIR < 0
     #define Z_MAX_PIN      P1_00   // PWRDET
   #else
-    #define Z_MIN_PIN      P1_00   // PWRDET
+    #define Z_MIN_PIN      P0_10   // PWRDET
   #endif
 #else
-  #define Z_STOP_PIN       P1_27   // Z-STOP
+  #define Z_STOP_PIN       P0_10   // Z-STOP
 #endif
 
 //
@@ -149,7 +149,7 @@
 
 #define TEMP_1_PIN         P0_23_A0   // A2 (T2) - (69) - TEMP_1_PIN
 #define TEMP_BED_PIN       P0_25_A2   // A0 (T0) - (67) - TEMP_BED_PIN
-
+#define TEMP_CHAMBER_PIN   P0_23_A0
 //
 // Software SPI pins for TMC2130 stepper drivers
 //
